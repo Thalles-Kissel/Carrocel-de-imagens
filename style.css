@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    animation: mudarbg 5s infinite;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+}
+
+header{
+    padding: 24px;
+    background-color: #000000;
+}
+header h1{
+    color: #ffffff;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 26px;
+    margin-top: 100%;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.container {
+    margin-top: 10%;
+    width: 800px;
+    height: 460px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+.bar {
+    background-color: #000000;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .5;
+    animation: mudarcores 6s infinite;
+}
+
+.bar:hover {
+    width: 40px;
+    background-color: #ffffff;
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%);
+}
+
+/* #imagem2:checked~.navegacao {
+    background-color: blue;
+} */
+
+input {
+    display: none;
+}
+
+.imagens {
+    display: flex;
+    height: 150%;
+    width: 700%;
+}
+
+.imagem {
+    width: 14.2857142857142%;
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+#imagem1:checked~.img1 {
+    margin-left: 0;
+}
+
+#imagem2:checked~.img1 {
+    margin-left: -14,28571428571429%;
+}
+
+#imagem3:checked~.img1 {
+    margin-left: -28.57142857142857%;
+}
+
+#imagem4:checked~.img1 {
+    margin-left: -42.8571428571426%;
+}
+
+#imagem5:checked~.img1 {
+    margin-left: -57.14285714285715%;
+}
+
+#imagem6:checked~.img1 {
+    margin-left: -71.42857142857144%;
+}
+#imagem7:checked~.img1 {
+    margin-left: -85.71428571428573%;
+}
+
+
+@keyframesn mudarcores {
+    0%{
+        background-color: #000000;
+    }
+    25% {
+        background-color: #000000;
+    }
+    50% {
+        background-color: #0000008f;
+    }
+    75% {
+        background-color: #00000077;
+    }
+    100% {
+        background-color: #000000;
+    }
+}
+
+@keyframes mudarbg {
+    0%{
+        background-color: #55ff96ab;
+    }
+    25% {
+        background-color: #11ff90ab;
+    }
+    50% {
+        background-color: #15ff589d;
+    }
+    75% {
+        background-color: #3dde7bbc;
+    }
+    100% {
+        background-color: #49b362b1;
+    }
+}
