@@ -32,6 +32,9 @@ footer{
 }
 
 .container {
+    border: 5px solid #000000;
+    box-shadow: 0 0 12px#000000;
+    border-radius: 20px;
     margin-top: 10%;
     width: 800px;
     height: 460px;
@@ -137,18 +140,18 @@ input {
 
 @keyframes mudarbg {
     0%{
-        background-color: #55ff96ab;
+        background-color: #000000ab;
     }
     25% {
-        background-color: #11ff90ab;
+        background-color: #2f875eab;
     }
     50% {
-        background-color: #15ff589d;
+        background-color: #0000009d;
     }
     75% {
-        background-color: #3dde7bbc;
+        background-color: #469168bc;
     }
     100% {
-        background-color: #49b362b1;
+        background-color: #000000b1;
     }
 }
